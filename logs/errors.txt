@@ -1,0 +1,487 @@
+
+Error: Format "Theory of Mind" requires nonexistent mod: 'tom'
+    at DexFormats.load (/Users/clintonnguyen/research/tom/pokemon-showdown/dist/sim/dex-formats.js:408:46)
+    at ModdedDex.includeFormats (/Users/clintonnguyen/research/tom/pokemon-showdown/dist/sim/dex.js:507:18)
+    at ModdedDex.loadData (/Users/clintonnguyen/research/tom/pokemon-showdown/dist/sim/dex.js:469:12)
+    at ModdedDex.includeData (/Users/clintonnguyen/research/tom/pokemon-showdown/dist/sim/dex.js:437:10)
+    at Object.<anonymous> (/Users/clintonnguyen/research/tom/pokemon-showdown/dist/server/team-validator-async.js:95:42)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+
+Error [ERR_HTTP_HEADERS_SENT]: Cannot write headers after they are sent to the client
+    at ServerResponse.writeHead (node:_http_server:345:11)
+    at Server.finish (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:117:19)
+    at /Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:94:18
+    at /Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:337:13
+    at streamFile (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:382:13)
+    at ReadStream.<anonymous> (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:375:17)
+    at ReadStream.emit (node:events:519:28)
+    at ReadStream.emit (node:domain:488:12)
+    at emitCloseNT (node:internal/streams/destroy:147:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+
+Error [ERR_HTTP_HEADERS_SENT]: Cannot write headers after they are sent to the client
+    at ServerResponse.writeHead (node:_http_server:345:11)
+    at Server.finish (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:117:19)
+    at /Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:94:18
+    at /Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:337:13
+    at streamFile (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:382:13)
+    at ReadStream.<anonymous> (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:375:17)
+    at ReadStream.emit (node:events:519:28)
+    at ReadStream.emit (node:domain:488:12)
+    at emitCloseNT (node:internal/streams/destroy:147:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+
+Error [ERR_HTTP_HEADERS_SENT]: Cannot write headers after they are sent to the client
+    at ServerResponse.writeHead (node:_http_server:345:11)
+    at Server.finish (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:117:19)
+    at /Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:94:18
+    at /Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:337:13
+    at streamFile (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:382:13)
+    at ReadStream.<anonymous> (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:375:17)
+    at ReadStream.emit (node:events:519:28)
+    at ReadStream.emit (node:domain:488:12)
+    at emitCloseNT (node:internal/streams/destroy:147:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+
+Error [ERR_HTTP_HEADERS_SENT]: Cannot write headers after they are sent to the client
+    at ServerResponse.writeHead (node:_http_server:345:11)
+    at Server.finish (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:117:19)
+    at /Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:94:18
+    at /Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:337:13
+    at streamFile (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:382:13)
+    at ReadStream.<anonymous> (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:375:17)
+    at ReadStream.emit (node:events:519:28)
+    at ReadStream.emit (node:domain:488:12)
+    at emitCloseNT (node:internal/streams/destroy:147:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+
+Error [ERR_HTTP_HEADERS_SENT]: Cannot write headers after they are sent to the client
+    at ServerResponse.writeHead (node:_http_server:345:11)
+    at Server.finish (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:117:19)
+    at /Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:94:18
+    at /Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:337:13
+    at streamFile (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:382:13)
+    at ReadStream.<anonymous> (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:375:17)
+    at ReadStream.emit (node:events:519:28)
+    at ReadStream.emit (node:domain:488:12)
+    at emitCloseNT (node:internal/streams/destroy:147:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+
+Error [ERR_HTTP_HEADERS_SENT]: Cannot write headers after they are sent to the client
+    at ServerResponse.writeHead (node:_http_server:345:11)
+    at Server.finish (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:117:19)
+    at /Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:94:18
+    at /Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:337:13
+    at streamFile (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:382:13)
+    at ReadStream.<anonymous> (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:375:17)
+    at ReadStream.emit (node:events:519:28)
+    at ReadStream.emit (node:domain:488:12)
+    at emitCloseNT (node:internal/streams/destroy:147:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+
+Error [ERR_HTTP_HEADERS_SENT]: Cannot write headers after they are sent to the client
+    at ServerResponse.writeHead (node:_http_server:345:11)
+    at Server.finish (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:117:19)
+    at /Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:94:18
+    at /Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:337:13
+    at streamFile (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:382:13)
+    at ReadStream.<anonymous> (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:375:17)
+    at ReadStream.emit (node:events:519:28)
+    at ReadStream.emit (node:domain:488:12)
+    at emitCloseNT (node:internal/streams/destroy:147:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+
+Error [ERR_HTTP_HEADERS_SENT]: Cannot write headers after they are sent to the client
+    at ServerResponse.writeHead (node:_http_server:345:11)
+    at Server.finish (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:117:19)
+    at /Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:94:18
+    at /Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:337:13
+    at streamFile (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:382:13)
+    at ReadStream.<anonymous> (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:375:17)
+    at ReadStream.emit (node:events:519:28)
+    at ReadStream.emit (node:domain:488:12)
+    at emitCloseNT (node:internal/streams/destroy:147:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+
+Error [ERR_HTTP_HEADERS_SENT]: Cannot write headers after they are sent to the client
+    at ServerResponse.writeHead (node:_http_server:345:11)
+    at Server.finish (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:117:19)
+    at /Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:94:18
+    at /Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:337:13
+    at streamFile (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:382:13)
+    at ReadStream.<anonymous> (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:375:17)
+    at ReadStream.emit (node:events:519:28)
+    at ReadStream.emit (node:domain:488:12)
+    at emitCloseNT (node:internal/streams/destroy:147:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+
+Error [ERR_HTTP_HEADERS_SENT]: Cannot write headers after they are sent to the client
+    at ServerResponse.writeHead (node:_http_server:345:11)
+    at Server.finish (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:117:19)
+    at /Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:94:18
+    at /Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:337:13
+    at streamFile (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:382:13)
+    at ReadStream.<anonymous> (/Users/clintonnguyen/research/tom/pokemon-showdown/node_modules/node-static/lib/node-static.js:375:17)
+    at ReadStream.emit (node:events:519:28)
+    at ReadStream.emit (node:domain:488:12)
+    at emitCloseNT (node:internal/streams/destroy:147:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: Request timeout
+    at ClientRequest.<anonymous> (/Users/clintonnguyen/research/tom/pokemon-showdown/lib/net.ts:126:20)
+    at Object.onceWrapper (node:events:633:28)
+    at ClientRequest.emit (node:events:519:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at TLSSocket.emitRequestTimeout (node:_http_client:856:9)
+    at Object.onceWrapper (node:events:633:28)
+    at TLSSocket.emit (node:events:531:35)
+    at TLSSocket.emit (node:domain:488:12)
+    at TLSSocket.Socket._onTimeout (node:net:591:8)
+    at listOnTimeout (node:internal/timers:581:17)
+
+Error: Request timeout
+    at ClientRequest.<anonymous> (/Users/clintonnguyen/research/tom/pokemon-showdown/lib/net.ts:126:20)
+    at Object.onceWrapper (node:events:633:28)
+    at ClientRequest.emit (node:events:519:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at TLSSocket.emitRequestTimeout (node:_http_client:856:9)
+    at Object.onceWrapper (node:events:633:28)
+    at TLSSocket.emit (node:events:531:35)
+    at TLSSocket.emit (node:domain:488:12)
+    at TLSSocket.Socket._onTimeout (node:net:591:8)
+    at listOnTimeout (node:internal/timers:581:17)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: Request timeout
+    at ClientRequest.<anonymous> (/Users/clintonnguyen/research/tom/pokemon-showdown/lib/net.ts:126:20)
+    at Object.onceWrapper (node:events:633:28)
+    at ClientRequest.emit (node:events:519:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at TLSSocket.emitRequestTimeout (node:_http_client:856:9)
+    at Object.onceWrapper (node:events:633:28)
+    at TLSSocket.emit (node:events:531:35)
+    at TLSSocket.emit (node:domain:488:12)
+    at TLSSocket.Socket._onTimeout (node:net:591:8)
+    at listOnTimeout (node:internal/timers:581:17)
+
+AggregateError: 
+    at internalConnectMultiple (node:net:1118:18)
+    at internalConnectMultiple (node:net:1186:5)
+    at Timeout.internalConnectMultipleTimeout (node:net:1712:5)
+    at listOnTimeout (node:internal/timers:583:11)
+    at processTimers (node:internal/timers:519:7)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: Request timeout
+    at ClientRequest.<anonymous> (/Users/clintonnguyen/research/tom/pokemon-showdown/lib/net.ts:126:20)
+    at Object.onceWrapper (node:events:633:28)
+    at ClientRequest.emit (node:events:519:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at TLSSocket.emitRequestTimeout (node:_http_client:856:9)
+    at Object.onceWrapper (node:events:633:28)
+    at TLSSocket.emit (node:events:531:35)
+    at TLSSocket.emit (node:domain:488:12)
+    at TLSSocket.Socket._onTimeout (node:net:591:8)
+    at listOnTimeout (node:internal/timers:581:17)
+
+Error: Request timeout
+    at ClientRequest.<anonymous> (/Users/clintonnguyen/research/tom/pokemon-showdown/lib/net.ts:126:20)
+    at Object.onceWrapper (node:events:633:28)
+    at ClientRequest.emit (node:events:519:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at TLSSocket.emitRequestTimeout (node:_http_client:856:9)
+    at Object.onceWrapper (node:events:633:28)
+    at TLSSocket.emit (node:events:531:35)
+    at TLSSocket.emit (node:domain:488:12)
+    at TLSSocket.Socket._onTimeout (node:net:591:8)
+    at listOnTimeout (node:internal/timers:581:17)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20)
+
+Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20)
+
+Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: getaddrinfo ENOTFOUND pokemonshowdown.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+
+Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20)
+
+Error: Request timeout
+    at ClientRequest.<anonymous> (/Users/clintonnguyen/research/tom/pokemon-showdown/lib/net.ts:126:20)
+    at Object.onceWrapper (node:events:633:28)
+    at ClientRequest.emit (node:events:519:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at TLSSocket.emitRequestTimeout (node:_http_client:856:9)
+    at Object.onceWrapper (node:events:633:28)
+    at TLSSocket.emit (node:events:531:35)
+    at TLSSocket.emit (node:domain:488:12)
+    at TLSSocket.Socket._onTimeout (node:net:591:8)
+    at listOnTimeout (node:internal/timers:581:17)
+
+Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20)
+
+Error: Request timeout
+    at ClientRequest.<anonymous> (/Users/clintonnguyen/research/tom/pokemon-showdown/lib/net.ts:126:20)
+    at Object.onceWrapper (node:events:633:28)
+    at ClientRequest.emit (node:events:519:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at TLSSocket.emitRequestTimeout (node:_http_client:856:9)
+    at Object.onceWrapper (node:events:633:28)
+    at TLSSocket.emit (node:events:531:35)
+    at TLSSocket.emit (node:domain:488:12)
+    at TLSSocket.Socket._onTimeout (node:net:591:8)
+    at listOnTimeout (node:internal/timers:581:17)
+
+Error: Request timeout
+    at ClientRequest.<anonymous> (/Users/clintonnguyen/research/tom/pokemon-showdown/lib/net.ts:126:20)
+    at Object.onceWrapper (node:events:633:28)
+    at ClientRequest.emit (node:events:519:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at TLSSocket.emitRequestTimeout (node:_http_client:856:9)
+    at Object.onceWrapper (node:events:633:28)
+    at TLSSocket.emit (node:events:531:35)
+    at TLSSocket.emit (node:domain:488:12)
+    at TLSSocket.Socket._onTimeout (node:net:591:8)
+    at listOnTimeout (node:internal/timers:581:17)
+
+Error: Request timeout
+    at ClientRequest.<anonymous> (/Users/clintonnguyen/research/tom/pokemon-showdown/lib/net.ts:126:20)
+    at Object.onceWrapper (node:events:633:28)
+    at ClientRequest.emit (node:events:519:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at TLSSocket.emitRequestTimeout (node:_http_client:856:9)
+    at Object.onceWrapper (node:events:633:28)
+    at TLSSocket.emit (node:events:531:35)
+    at TLSSocket.emit (node:domain:488:12)
+    at TLSSocket.Socket._onTimeout (node:net:591:8)
+    at listOnTimeout (node:internal/timers:581:17)
