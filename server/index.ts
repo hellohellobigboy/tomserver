@@ -127,6 +127,8 @@ function setupGlobals() {
 }
 setupGlobals();
 
+import { db } from './firebase';
+
 if (Config.crashguard) {
 	// graceful crash - allow current battles to finish before restarting
 	process.on('uncaughtException', (err: Error) => {

@@ -24,6 +24,7 @@ import { State } from './state';
 import { BattleQueue, type Action } from './battle-queue';
 import { BattleActions } from './battle-actions';
 import { Utils } from '../lib/utils';
+import { logTurn, TurnData } from '../server/logger';
 declare const __version: any;
 
 export type ChannelID = 0 | 1 | 2 | 3 | 4;
@@ -2913,15 +2914,27 @@ export class Battle {
 	 * If there is a mid-turn decision (like U-Turn), this will return
 	 * and be called again later to resume the turn.
 	 */
-	turnLoop() {
+	async turnLoop(): Promise<void> {
 		this.add('');
 		this.add('t:', Math.floor(Date.now() / 1000));
+
+		const player1 = this.sides[0];
+		const player2 = this.sides[1];
+		let start1_pokemon = '';
+		let start1_health = 100;
+		let start2_pokemon = '';
+		let start2_health = 100;
+
 		if (this.requestState) this.requestState = '';
 
 		if (!this.midTurn) {
 			this.queue.insertChoice({ choice: 'beforeTurn' });
 			this.queue.addChoice({ choice: 'residual' });
 			this.midTurn = true;
+			start1_pokemon = player1.active[0].name;
+			start1_health = player1.active[0].hp;
+			start2_pokemon = player2.active[0].name;
+			start2_health = player2.active[0].hp;
 		}
 
 		let action;
@@ -2931,6 +2944,28 @@ export class Battle {
 		}
 
 		this.endTurn();
+		console.log(this)
+
+		const singleTurn: TurnData = {
+			battle_id: this.id,
+			turn: this.turn - 1,
+			p1_action: this.inputLog[this.inputLog.length - 2],
+			p1_pokemon: start1_pokemon,
+			p1_start_health: start1_health,
+			p1_end_health: player1.active[0].hp,
+			p1_reaction: 20,
+			p2_action: this.inputLog[this.inputLog.length - 1],
+			p2_pokemon: start2_pokemon,
+			p2_start_health: start2_health,
+			p2_end_health: player2.active[0].hp,
+			p2_reaction: 20
+
+		}
+		try {
+			await logTurn(singleTurn);
+		} catch (e) {
+			console.error('Not written to database')
+		}
 		this.midTurn = false;
 		this.queue.clear();
 	}

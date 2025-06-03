@@ -1,6 +1,8 @@
 # /config/*
 !/config/formats.ts
 # /logs/**/*
+server/firebase-keys/*
+.env
 /test/modlogs
 /test/replays/*.html
 /node_modules
