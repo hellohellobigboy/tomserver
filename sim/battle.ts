@@ -2947,7 +2947,7 @@ export class Battle {
 		console.log(this)
 
 		const singleTurn: TurnData = {
-			battle_id: this.id,
+			battle_id: (this as any).room?.id,
 			turn: this.turn - 1,
 			p1_action: this.inputLog[this.inputLog.length - 2],
 			p1_pokemon: start1_pokemon,
