@@ -2947,15 +2947,29 @@ export class Battle {
 		console.log(this)
 		console.log(player1.pokemon)
 
+		function formatAction(raw: string, player: Side) {
+			const pieces = raw.split(" "); // ['>p1', 'switch', 2]
+			// might need to add a check for teampreview
+			if (pieces[1] == 'switch') {
+				return `switch ${player.active[0].name}`;
+			}
+			if (pieces[1] == 'move') {
+				return `move ${pieces[2]}`
+			}
+			return raw
+		}
+		const p1_formataction = formatAction(this.inputLog[this.inputLog.length - 2], player1)
+		const p2_formataction = formatAction(this.inputLog[this.inputLog.length - 1], player2)
+
 		const singleTurn: TurnData = {
 			battle_id: '',
 			turn: this.turn - 1,
-			p1_action: this.inputLog[this.inputLog.length - 2],
+			p1_action: p1_formataction,
 			p1_pokemon: start1_pokemon,
 			p1_start_health: start1_health,
 			p1_end_health: player1.active[0].hp,
 			p1_reaction: 20,
-			p2_action: this.inputLog[this.inputLog.length - 1],
+			p2_action: p2_formataction,
 			p2_pokemon: start2_pokemon,
 			p2_start_health: start2_health,
 			p2_end_health: player2.active[0].hp,
