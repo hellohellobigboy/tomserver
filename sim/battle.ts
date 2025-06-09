@@ -146,6 +146,7 @@ export class Battle {
 	readonly messageLog: string[];
 	sentLogPos: number;
 	sentEnd: boolean;
+	clientData: string;
 
 	requestState: RequestState;
 	turn: number;
@@ -236,6 +237,7 @@ export class Battle {
 		this.messageLog = [];
 		this.sentLogPos = 0;
 		this.sentEnd = false;
+		this.clientData = '';
 
 		this.requestState = '';
 		this.turn = 0;
@@ -2945,7 +2947,6 @@ export class Battle {
 
 		this.endTurn();
 		console.log(this)
-		console.log(player1.pokemon)
 
 		function formatAction(raw: string, player: Side) {
 			const pieces = raw.split(" "); // ['>p1', 'switch', 2]
