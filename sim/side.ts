@@ -193,6 +193,7 @@ export class Side {
 	 * This is also used for checking Self-KO clause in Pokemon Stadium 2.
 	 */
 	lastMove: Move | null;
+	clientData: string
 
 	constructor(name: string, battle: Battle, sideNum: number, team: PokemonSet[]) {
 		const sideScripts = battle.dex.data.Scripts.side;
@@ -253,6 +254,7 @@ export class Side {
 
 		// old-gens
 		this.lastMove = null;
+		this.clientData = '';
 	}
 
 	toJSON(): AnyObject {
@@ -1047,6 +1049,11 @@ export class Side {
 			return this.emitChoiceError(`Can't undo: A trapping/disabling effect would cause undo to leak information`);
 		}
 
+		if (input.startsWith('fromclient ')) {
+			this.clientData = input.split(" ")[1];
+			return;
+		}
+
 		this.clearChoice();
 
 		const choiceStrings = (input.startsWith('team ') ? [input] : input.split(','));
@@ -1144,6 +1151,10 @@ export class Side {
 			case 'auto':
 			case 'default':
 				this.autoChoose();
+				break;
+			case 'fromclient': 
+				console.log('should not hit this');
+				this.clientData = input;
 				break;
 			default:
 				this.emitChoiceError(`Unrecognized choice: ${choiceString}`);
