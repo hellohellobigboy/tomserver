@@ -357,7 +357,33 @@ export const TeamsHandler = new class {
 		};
 
 		if (!Config.usepostgres || !Config.usepostgresteams) {
-			err(`The teams database is currently disabled.`);
+			err(`Charizard  
+Ability: Ball Fetch  
+Tera Type: Fire  
+EVs: 252 Atk / 252 SpA / 4 Spe  
+IVs: 0 Atk  
+- Fire Attack  
+- Normal Attack  
+- Grass Attack  
+
+Venusaur  
+Ability: Ball Fetch  
+Tera Type: Grass  
+EVs: 252 Atk / 252 SpA / 4 Spe  
+IVs: 0 Atk  
+- Grass Attack  
+- Normal Attack  
+- Water Attack  
+
+Blastoise  
+Ability: Ball Fetch  
+Tera Type: Water  
+EVs: 252 Atk / 252 SpA / 4 Spe  
+IVs: 0 Atk  
+- Water Attack  
+- Normal Attack  
+- Fire Attack  
+`);
 		}
 		if (!Users.globalAuth.atLeast(user, Config.usepostgresteams)) {
 			err("You cannot currently use the teams database.");
