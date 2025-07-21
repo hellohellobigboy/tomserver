@@ -2922,9 +2922,9 @@ export class Battle {
 
 		const player1 = this.sides[0];
 		const player2 = this.sides[1];
-		let start1_pokemon = '';
+		let start1_pokemon = 'First turn';
 		let start1_health = 100;
-		let start2_pokemon = '';
+		let start2_pokemon = 'First turn';
 		let start2_health = 100;
 
 		if (this.requestState) this.requestState = '';
@@ -2968,9 +2968,13 @@ export class Battle {
 		// }
 
 		
+		let p1_client: any = {};
+		let p2_client: any = {};
 
-		const p1_client = JSON.parse(player1.clientData);
-		const p2_client = JSON.parse(player2.clientData);
+		if (player1.clientData || player2.clientData) {
+			p1_client = JSON.parse(player1.clientData);
+			p2_client = JSON.parse(player2.clientData);
+		}
 
 		const battle_id = p1_client.battle_id;
 		const timestamp = p1_client.timestamp;
