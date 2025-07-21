@@ -2960,6 +2960,15 @@ export class Battle {
 			return raw
 		}
 
+		if (this.turn - 1 == 1) {
+			start1_pokemon = player1.active[0].name;
+			start1_health = player1.active[0].hp;
+			start2_pokemon = player2.active[0].name;
+			start2_health = player2.active[0].hp;
+		}
+
+		
+
 		const p1_client = JSON.parse(player1.clientData);
 		const p2_client = JSON.parse(player2.clientData);
 
@@ -2974,7 +2983,6 @@ export class Battle {
 
 		const p1_tracking = p1_client.hoverLogs;
 		const p2_tracking = p2_client.hoverLogs;
-
 
 		const p1_formataction = formatAction(this.inputLog[this.inputLog.length - 2], player1)
 		const p2_formataction = formatAction(this.inputLog[this.inputLog.length - 1], player2)
