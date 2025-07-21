@@ -2964,7 +2964,6 @@ export class Battle {
 			console.log('Skipping turn logging - no client data available');
 			this.midTurn = false;
 			this.queue.clear();
-			return;
 		}
 
 		const p1_client = JSON.parse(player1.clientData);
