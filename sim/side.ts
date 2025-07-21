@@ -1039,6 +1039,15 @@ export class Side {
 	}
 
 	choose(input: string) {
+
+		if (input.startsWith('fromclient ')) {
+			console.log('Notice me!')
+			this.clientData = input.split(" ")[1];
+			console.log(this.clientData)
+			// this.clientData = input.slice('fromclient '.length)
+			return;
+		}
+
 		if (!this.requestState) {
 			return this.emitChoiceError(
 				this.battle.ended ? `Can't do anything: The game is over` : `Can't do anything: It's not your turn`
@@ -1047,14 +1056,6 @@ export class Side {
 
 		if (this.choice.cantUndo) {
 			return this.emitChoiceError(`Can't undo: A trapping/disabling effect would cause undo to leak information`);
-		}
-
-		if (input.startsWith('fromclient ')) {
-			console.log('Notice me!')
-			this.clientData = input.split(" ")[1];
-			console.log(this.clientData)
-			// this.clientData = input.slice('fromclient '.length)
-			return;
 		}
 
 		this.clearChoice();
