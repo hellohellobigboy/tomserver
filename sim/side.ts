@@ -1154,10 +1154,6 @@ export class Side {
 			case 'default':
 				this.autoChoose();
 				break;
-			case 'fromclient': 
-				console.log('should not hit this');
-				this.clientData = input;
-				break;
 			default:
 				this.emitChoiceError(`Unrecognized choice: ${choiceString}`);
 				break;
