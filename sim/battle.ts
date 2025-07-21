@@ -2969,71 +2969,71 @@ export class Battle {
 			return raw
 		}
 
-		// if (this.turn > 0) {
-		// 	const p1_client = JSON.parse(player1.clientData);
-		// 	const p2_client = JSON.parse(player2.clientData);
+		if (this.turn > 0) {
+			const p1_client = JSON.parse(player1.clientData);
+			const p2_client = JSON.parse(player2.clientData);
 
-		// 	const battle_id = p1_client.battle_id;
-		// 	const timestamp = p1_client.timestamp;
+			const battle_id = p1_client.battle_id;
+			const timestamp = p1_client.timestamp;
 			
-		// 	const p1_reaction = p1_client.reaction
-		// 	const p2_reaction = p2_client.reaction
+			const p1_reaction = p1_client.reaction
+			const p2_reaction = p2_client.reaction
 
-		// 	const p1_timeout = p1_client.timeout;
-		// 	const p2_timeout = p2_client.timeout;
+			const p1_timeout = p1_client.timeout;
+			const p2_timeout = p2_client.timeout;
 
-		// 	const p1_tracking = p1_client.hoverLogs;
-		// 	const p2_tracking = p2_client.hoverLogs;
+			const p1_tracking = p1_client.hoverLogs;
+			const p2_tracking = p2_client.hoverLogs;
 
-		// 	const p1_formataction = formatAction(this.inputLog[this.inputLog.length - 2], player1)
-		// 	const p2_formataction = formatAction(this.inputLog[this.inputLog.length - 1], player2)
+			const p1_formataction = formatAction(this.inputLog[this.inputLog.length - 2], player1)
+			const p2_formataction = formatAction(this.inputLog[this.inputLog.length - 1], player2)
 
-		// 	const singleTurn: TurnData = {
-		// 		battle_id: battle_id,
-		// 		turn: this.turn - 1,
-		// 		timestamp: timestamp,
-		// 		p1_action: p1_formataction,
-		// 		p1_pokemon: start1_pokemon,
-		// 		p1_start_health: start1_health,
-		// 		p1_end_health: player1.active[0].hp,
-		// 		p1_reaction: p1_reaction,
-		// 		p1_timeout: p1_timeout,
-		// 		p1_move1: p1_tracking["move-1"],
-		// 		p1_move2: p1_tracking["move-2"],
-		// 		p1_move3: p1_tracking["move-3"],
-		// 		p1_switch2: p1_tracking["switch-1"],
-		// 		p1_switch3: p1_tracking["switch-2"],
-		// 		p1_own_pokemon1: p1_tracking["player1-pokemon1"],
-		// 		p1_own_pokemon2: p1_tracking["player1-pokemon2"],
-		// 		p1_own_pokemon3: p1_tracking["player1-pokemon3"],
-		// 		p1_foe_pokemon1: p1_tracking["player2-pokemon1"],
-		// 		p1_foe_pokemon2: p1_tracking["player2-pokemon2"],
-		// 		p1_foe_pokemon3: p1_tracking["player2-pokemon3"],
-		// 		p2_action: p2_formataction,
-		// 		p2_pokemon: start2_pokemon,
-		// 		p2_start_health: start2_health,
-		// 		p2_end_health: player2.active[0].hp,
-		// 		p2_reaction: p2_reaction,
-		// 		p2_timeout: p2_timeout,
-		// 		p2_move1: p2_tracking["move-1"],
-		// 		p2_move2: p2_tracking["move-2"],
-		// 		p2_move3: p2_tracking["move-3"],
-		// 		p2_switch2: p2_tracking["switch-1"],
-		// 		p2_switch3: p2_tracking["switch-2"],
-		// 		p2_own_pokemon1: p2_tracking["player2-pokemon1"],
-		// 		p2_own_pokemon2: p2_tracking["player2-pokemon2"],
-		// 		p2_own_pokemon3: p2_tracking["player2-pokemon3"],
-		// 		p2_foe_pokemon1: p2_tracking["player1-pokemon1"],
-		// 		p2_foe_pokemon2: p2_tracking["player1-pokemon2"],
-		// 		p2_foe_pokemon3: p2_tracking["player1-pokemon3"],
-		// 	}
-		// 	try {
-		// 		await logTurn(singleTurn);
-		// 	} catch (e) {
-		// 		console.error('Not written to database')
-		// 	}
+			const singleTurn: TurnData = {
+				battle_id: battle_id,
+				turn: this.turn - 1,
+				timestamp: timestamp,
+				p1_action: p1_formataction,
+				p1_pokemon: start1_pokemon,
+				p1_start_health: start1_health,
+				p1_end_health: player1.active[0].hp,
+				p1_reaction: p1_reaction,
+				p1_timeout: p1_timeout,
+				p1_move1: p1_tracking["move-1"],
+				p1_move2: p1_tracking["move-2"],
+				p1_move3: p1_tracking["move-3"],
+				p1_switch2: p1_tracking["switch-1"],
+				p1_switch3: p1_tracking["switch-2"],
+				p1_own_pokemon1: p1_tracking["player1-pokemon1"],
+				p1_own_pokemon2: p1_tracking["player1-pokemon2"],
+				p1_own_pokemon3: p1_tracking["player1-pokemon3"],
+				p1_foe_pokemon1: p1_tracking["player2-pokemon1"],
+				p1_foe_pokemon2: p1_tracking["player2-pokemon2"],
+				p1_foe_pokemon3: p1_tracking["player2-pokemon3"],
+				p2_action: p2_formataction,
+				p2_pokemon: start2_pokemon,
+				p2_start_health: start2_health,
+				p2_end_health: player2.active[0].hp,
+				p2_reaction: p2_reaction,
+				p2_timeout: p2_timeout,
+				p2_move1: p2_tracking["move-1"],
+				p2_move2: p2_tracking["move-2"],
+				p2_move3: p2_tracking["move-3"],
+				p2_switch2: p2_tracking["switch-1"],
+				p2_switch3: p2_tracking["switch-2"],
+				p2_own_pokemon1: p2_tracking["player2-pokemon1"],
+				p2_own_pokemon2: p2_tracking["player2-pokemon2"],
+				p2_own_pokemon3: p2_tracking["player2-pokemon3"],
+				p2_foe_pokemon1: p2_tracking["player1-pokemon1"],
+				p2_foe_pokemon2: p2_tracking["player1-pokemon2"],
+				p2_foe_pokemon3: p2_tracking["player1-pokemon3"],
+			}
+			try {
+				await logTurn(singleTurn);
+			} catch (e) {
+				console.error('Not written to database')
+			}
 
-		// }
+		}
 		
 		this.midTurn = false;
 		this.queue.clear();
