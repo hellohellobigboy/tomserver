@@ -1050,9 +1050,9 @@ export class Side {
 		}
 
 		if (input.startsWith('fromclient ')) {
-			// this.clientData = input.split(" ")[1];
+			this.clientData = input.split(" ")[1];
 			console.log(this.clientData)
-			this.clientData = input.slice('fromclient '.length)
+			// this.clientData = input.slice('fromclient '.length)
 			return;
 		}
 
