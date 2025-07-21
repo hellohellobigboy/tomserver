@@ -2955,7 +2955,7 @@ export class Battle {
 		}
 
 		this.endTurn();
-		console.log(this)
+		// console.log(this)
 
 		function formatAction(raw: string, player: Side) {
 			const pieces = raw.split(" "); // ['>p1', 'switch', 2]

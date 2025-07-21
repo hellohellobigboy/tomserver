@@ -1050,6 +1050,7 @@ export class Side {
 		}
 
 		if (input.startsWith('fromclient ')) {
+			console.log('Notice me!')
 			this.clientData = input.split(" ")[1];
 			console.log(this.clientData)
 			// this.clientData = input.slice('fromclient '.length)
