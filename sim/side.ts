@@ -496,7 +496,7 @@ export class Side {
 		this.choice.error = message;
 		const updated = update ? this.updateRequestForPokemon(update.pokemon, update.update) : null;
 		const type = `[${updated ? 'Unavailable' : 'Invalid'} choice]`;
-		this.battle.send('sideupdate', `${this.id}\n|error|${type} ${message}`);
+		this.battle.send('sideupdate', `${this.id}\n|error|${message}`);
 		if (updated) this.emitRequest(this.activeRequest!);
 		if (this.battle.strictChoices) throw new Error(`${message}`);
 		return false;
