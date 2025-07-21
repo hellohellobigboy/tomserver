@@ -2960,6 +2960,13 @@ export class Battle {
 			return raw
 		}
 
+		if (!player1.clientData || !player2.clientData) {
+			console.log('Skipping turn logging - no client data available');
+			this.midTurn = false;
+			this.queue.clear();
+			return;
+		}
+
 		const p1_client = JSON.parse(player1.clientData);
 		const p2_client = JSON.parse(player2.clientData);
 
