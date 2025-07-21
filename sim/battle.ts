@@ -2922,9 +2922,9 @@ export class Battle {
 
 		const player1 = this.sides[0];
 		const player2 = this.sides[1];
-		let start1_pokemon = 'First turn';
+		let start1_pokemon = '';
 		let start1_health = 100;
-		let start2_pokemon = 'First turn';
+		let start2_pokemon = '';
 		let start2_health = 100;
 
 		if (this.requestState) this.requestState = '';
