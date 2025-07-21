@@ -2960,15 +2960,6 @@ export class Battle {
 			return raw
 		}
 
-		// if (this.turn - 1 == 1) {
-		// 	start1_pokemon = player1.active[0].name;
-		// 	start1_health = player1.active[0].hp;
-		// 	start2_pokemon = player2.active[0].name;
-		// 	start2_health = player2.active[0].hp;
-		// }
-
-		
-
 		const p1_client = JSON.parse(player1.clientData);
 		const p2_client = JSON.parse(player2.clientData);
 
