@@ -2927,6 +2927,15 @@ export class Battle {
 		let start2_pokemon = '';
 		let start2_health = 100;
 
+		console.log('=== TURNLOOP START ===');
+    console.log('Turn:', this.turn);
+    console.log('midTurn:', this.midTurn);
+    console.log('requestState:', this.requestState);
+    console.log('ended:', this.ended);
+    console.log('P1 clientData:', player1?.clientData || 'MISSING');
+    console.log('P2 clientData:', player2?.clientData || 'MISSING');
+    console.log('========================');
+
 		if (this.requestState) this.requestState = '';
 
 		if (!this.midTurn) {
@@ -2960,11 +2969,14 @@ export class Battle {
 			return raw
 		}
 
-		if (!player1.clientData || !player2.clientData) {
-			console.log('Skipping turn logging - no client data available');
-			this.midTurn = false;
-			this.queue.clear();
-		}
+		// if (!player1.clientData || !player2.clientData) {
+		// 	console.log('Skipping turn logging - no client data available');
+		// 	this.midTurn = false;
+		// 	this.queue.clear();
+		// } else {
+		// 	const p1_client = JSON.parse(player1.clientData);
+		// 	const p2_client = JSON.parse(player2.clientData);	
+		// }
 
 		const p1_client = JSON.parse(player1.clientData);
 		const p2_client = JSON.parse(player2.clientData);
