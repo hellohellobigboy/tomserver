@@ -2968,13 +2968,9 @@ export class Battle {
 		// }
 
 		
-		let p1_client: any = {};
-		let p2_client: any = {};
 
-		if (player1.clientData || player2.clientData) {
-			p1_client = JSON.parse(player1.clientData);
-			p2_client = JSON.parse(player2.clientData);
-		}
+		const p1_client = JSON.parse(player1.clientData);
+		const p2_client = JSON.parse(player2.clientData);
 
 		const battle_id = p1_client.battle_id;
 		const timestamp = p1_client.timestamp;
