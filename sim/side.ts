@@ -1039,13 +1039,13 @@ export class Side {
 	}
 
 	choose(input: string) {
-		console.log('----------------')
-		console.log(input)
-		input = input.split('+')[0]
-		console.log(input)
-		this.clientData = input.split('+')[1]
-		console.log(this.clientData)
-		console.log('----------------')
+		// console.log('----------------')
+		// console.log(input)
+		// input = input.split('+')[0]
+		// console.log(input)
+		// this.clientData = input.split('+')[1]
+		// console.log(this.clientData)
+		// console.log('----------------')
 
 		// if (input.startsWith('fromclient ')) {
 		// 	console.log('Notice me 1!')
