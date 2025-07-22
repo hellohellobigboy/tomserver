@@ -1041,7 +1041,7 @@ export class Side {
 	choose(input: string) {
 
 		if (input.startsWith('fromclient ')) {
-			console.log('Notice me!')
+			console.log('Notice me 1!')
 			this.clientData = input.split(" ")[1];
 			console.log(this.clientData)
 			return;
@@ -1079,7 +1079,7 @@ export class Side {
 
 			switch (choiceType) {
 			case 'fromclient':
-				console.log('Notice me!')
+				console.log('Notice me! 2')
 				this.clientData = input.split(" ")[1];
 				console.log(this.clientData)
 				break;

@@ -611,6 +611,8 @@ export class RoomBattle extends RoomGame<RoomBattlePlayer> {
 		if (Rooms.global.battleCount === 0) Rooms.global.automaticKillRequest();
 	}
 	override choose(user: User, data: string) {
+		console.log(user)
+		console.log(data)
 		if (this.frozen) {
 			user.popup(`Your battle is currently paused, so you cannot move right now.`);
 			return;
