@@ -1080,6 +1080,7 @@ export class Side {
 				console.log('Notice me!')
 				this.clientData = input.split(" ")[1];
 				console.log(this.clientData)
+				break;
 			case 'move':
 				const original = data;
 				const error = () => this.emitChoiceError(`Conflicting arguments for "move": ${original}`);
