@@ -1040,13 +1040,16 @@ export class Side {
 
 	choose(input: string) {
 
-		if (input.startsWith('fromclient ')) {
-			console.log('Notice me 1!')
-			this.clientData = input.split(" ")[1];
-			console.log(this.clientData)
-			return;
-			// this.clientData = input.slice('fromclient '.length)
-		}
+		input = input.split(',')[0]
+		this.clientData = input.split(',')[1]
+
+		// if (input.startsWith('fromclient ')) {
+		// 	console.log('Notice me 1!')
+		// 	this.clientData = input.split(" ")[1];
+		// 	console.log(this.clientData)
+		// 	return;
+		// 	// this.clientData = input.slice('fromclient '.length)
+		// }
 
 		if (!this.requestState) {
 			return this.emitChoiceError(
