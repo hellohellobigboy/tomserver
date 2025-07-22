@@ -1040,8 +1040,10 @@ export class Side {
 
 	choose(input: string) {
 
-		input = input.split(',')[0]
-		this.clientData = input.split(',')[1]
+		input = input.split('+')[0]
+		console.log(input)
+		this.clientData = input.split('+')[1]
+		console.log(this.clientData)
 
 		// if (input.startsWith('fromclient ')) {
 		// 	console.log('Notice me 1!')
