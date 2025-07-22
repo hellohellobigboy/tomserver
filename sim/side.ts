@@ -1039,20 +1039,12 @@ export class Side {
 	}
 
 	choose(input: string) {
-	// 	console.log('=== CHOOSE CALLED ===');
-    // console.log('Input received:', JSON.stringify(input));
-    // console.log('Input length:', input.length);
-    // console.log('Input type:', typeof input);
-    // console.log('requestState:', this.requestState);
-    // console.log('battle.ended:', this.battle?.ended);
-    // console.log('====================');
 
 		if (input.startsWith('fromclient ')) {
 			console.log('Notice me!')
 			this.clientData = input.split(" ")[1];
 			console.log(this.clientData)
 			// this.clientData = input.slice('fromclient '.length)
-			return;
 		}
 
 		if (!this.requestState) {
