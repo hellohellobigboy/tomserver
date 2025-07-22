@@ -2970,6 +2970,7 @@ export class Battle {
 		}
 
 		if (this.turn > 0) {
+			console.log(this.turn)
 			const p1_client = JSON.parse(player1.clientData);
 			const p2_client = JSON.parse(player2.clientData);
 

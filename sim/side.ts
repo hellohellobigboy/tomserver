@@ -1062,6 +1062,7 @@ export class Side {
 		const choiceStrings = (input.startsWith('team ') ? [input] : input.split(','));
 
 		if (choiceStrings.length > this.active.length) {
+			console.log(choiceStrings)
 			return this.emitChoiceError(
 				`Can't make choices: You sent choices for ${choiceStrings.length} Pokémon, but this is a ${this.battle.gameType} game!`
 			);
