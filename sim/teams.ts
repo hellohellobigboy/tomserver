@@ -15,7 +15,7 @@ export interface PokemonSet {
 	 * Nickname. Should be identical to its base species if not specified
 	 * by the player, e.g. "Minior".
 	 */
-	name: string;
+	name: string
 	/**
 	 * Species name (including forme if applicable), e.g. "Minior-Red".
 	 * This should always be converted to an id before use.
