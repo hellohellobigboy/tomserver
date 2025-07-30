@@ -1103,14 +1103,11 @@ export const commands: Chat.ChatCommands = {
 		`/choose [text] - Make a choice for the currently active game.`,
 	],
 
-	fromclient(target, room, user) {
-		room = this.requireRoom();
-		if (!room.game) return;
-		try {
-			room.battle?.choose(user, `fromclient ${target}`);
-		} catch (e) {
-			throw new Chat.ErrorMessage(this.tr`Unable to get data from client`);
-		}
+	fromclient(data, room, user) {
+		console.log('are we working')
+		// room = this.requireRoom();
+		// room.game.fromclient(user, data);
+		
 	},
 
 	mv: 'move',
