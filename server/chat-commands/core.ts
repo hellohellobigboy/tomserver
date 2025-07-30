@@ -1106,7 +1106,9 @@ export const commands: Chat.ChatCommands = {
 	fromclient(data, room, user) {
 		console.log('are we working')
 		room = this.requireRoom();
-		// room.game.fromclient(user, data);
+		if (!room.game) throw new Chat.ErrorMessage(this.tr`This room doesn't have an active game.`);
+		if (!room.game.fromclient) throw new Chat.ErrorMessage(this.tr`This game doesn't support /fromclient`);
+		room.game.fromclient(user, data);
 		
 	},
 
