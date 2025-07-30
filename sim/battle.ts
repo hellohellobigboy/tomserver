@@ -3035,8 +3035,8 @@ export class Battle {
 		// 	}
 
 		// }
-		console.log(this.sides[0])
-		console.log(this.sides[1])
+		// console.log(this.sides[0])
+		// console.log(this.sides[1])
 		
 		this.midTurn = false;
 		this.queue.clear();

@@ -1105,7 +1105,7 @@ export const commands: Chat.ChatCommands = {
 
 	fromclient(data, room, user) {
 		console.log('are we working')
-		// room = this.requireRoom();
+		room = this.requireRoom();
 		// room.game.fromclient(user, data);
 		
 	},

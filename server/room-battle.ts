@@ -612,7 +612,7 @@ export class RoomBattle extends RoomGame<RoomBattlePlayer> {
 	}
 	override choose(user: User, data: string) {
 		console.log('working?')
-		// console.log(data)
+		console.log(this)
 		if (this.frozen) {
 			user.popup(`Your battle is currently paused, so you cannot move right now.`);
 			return;

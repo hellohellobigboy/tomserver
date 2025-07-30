@@ -294,6 +294,8 @@ export abstract class RoomGame<PlayerClass extends RoomGamePlayer = RoomGamePlay
 	 */
 	choose?(user: User, text: string): void;
 
+	fromclient?(user: User, text: string): void;
+
 	/**
 	 * Called when a user uses /undo [text]
 	 */
