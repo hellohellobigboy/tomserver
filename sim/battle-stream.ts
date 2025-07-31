@@ -231,6 +231,12 @@ export class BattleStream extends Streams.ObjectReadWriteStream<string> {
 		case 'version-origin':
 			break;
 		case 'fromclient':
+			const clientData = JSON.parse(message);
+			if (clientData.player == 'p1') {
+				this.battle!.sides[0].clientData = clientData;
+			} else {
+				this.battle!.sides[1].clientData = clientData;
+			}
 			console.log('what is up')
 			break;
 		default:
