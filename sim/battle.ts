@@ -2961,6 +2961,7 @@ export class Battle {
 			}
 			return raw
 		}
+		console.log(this)
 
 		// if (this.turn > 1) {
 		// 	console.log(this.turn)
