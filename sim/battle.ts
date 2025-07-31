@@ -193,6 +193,7 @@ export class Battle {
 		this.log = [];
 		this.add('t:', Math.floor(Date.now() / 1000));
 
+
 		const format = options.format || Dex.formats.get(options.formatid, true);
 		this.format = format;
 		this.dex = Dex.forFormat(format);
@@ -2927,14 +2928,6 @@ export class Battle {
 		let start2_pokemon = '';
 		let start2_health = 100;
 
-		console.log('=== TURNLOOP START ===');
-    console.log('Turn:', this.turn);
-    console.log('midTurn:', this.midTurn);
-    console.log('requestState:', this.requestState);
-    console.log('ended:', this.ended);
-    console.log('P1 clientData:', player1?.clientData || 'MISSING');
-    console.log('P2 clientData:', player2?.clientData || 'MISSING');
-    console.log('========================');
 
 		if (this.requestState) this.requestState = '';
 
