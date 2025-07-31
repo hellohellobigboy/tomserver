@@ -230,6 +230,9 @@ export class BattleStream extends Streams.ObjectReadWriteStream<string> {
 		case 'version':
 		case 'version-origin':
 			break;
+		case 'fromclient':
+			console.log('what is up')
+			break;
 		default:
 			throw new Error(`Unrecognized command ">${type} ${message}"`);
 		}
