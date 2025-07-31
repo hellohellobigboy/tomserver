@@ -614,7 +614,7 @@ export class RoomBattle extends RoomGame<RoomBattlePlayer> {
 	override fromclient(user: User, data: string) {
 		console.log("please see me!")
 		// console.log(data)
-		void this.stream.write(`>fromclient ${data}`);
+		console.log(this.inputLog)
 	}
 	override choose(user: User, data: string) {
 		console.log('working?')
