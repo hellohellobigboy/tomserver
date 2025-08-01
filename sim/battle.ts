@@ -146,7 +146,7 @@ export class Battle {
 	readonly messageLog: string[];
 	sentLogPos: number;
 	sentEnd: boolean;
-	clientData: string;
+	inputLength: number;
 
 	requestState: RequestState;
 	turn: number;
@@ -238,7 +238,7 @@ export class Battle {
 		this.messageLog = [];
 		this.sentLogPos = 0;
 		this.sentEnd = false;
-		this.clientData = '';
+		this.inputLength = 0;
 
 		this.requestState = '';
 		this.turn = 0;
@@ -2927,7 +2927,6 @@ export class Battle {
 		let start1_health = 100;
 		let start2_pokemon = '';
 		let start2_health = 100;
-		let inputlength = 0;
 
 
 		if (this.requestState) this.requestState = '';
@@ -2984,7 +2983,7 @@ export class Battle {
 
 			console.log(this.inputLog)
 			console.log(this.inputLog.length)
-			console.log(this.inputLog.length - inputlength)
+			console.log(this.inputLog.length - this.inputLength)
 
 			const p1_formataction = formatAction(this.inputLog[this.inputLog.length - 2], player1)
 			const p2_formataction = formatAction(this.inputLog[this.inputLog.length - 1], player2)
@@ -3040,7 +3039,7 @@ export class Battle {
 		
 		this.midTurn = false;
 		this.queue.clear();
-		inputlength = this.inputLog.length;
+		this.inputLength = this.inputLog.length;
 	}
 
 	/**
