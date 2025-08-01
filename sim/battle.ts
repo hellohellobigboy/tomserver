@@ -2927,7 +2927,7 @@ export class Battle {
 		let start1_health = 100;
 		let start2_pokemon = '';
 		let start2_health = 100;
-		let inputlength = this.inputLog.length;
+		let inputlength = 0;
 
 
 		if (this.requestState) this.requestState = '';
@@ -3040,6 +3040,7 @@ export class Battle {
 		
 		this.midTurn = false;
 		this.queue.clear();
+		inputlength = this.inputLog.length;
 	}
 
 	/**
