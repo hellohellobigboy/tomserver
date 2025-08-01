@@ -2935,14 +2935,18 @@ export class Battle {
 			this.queue.insertChoice({ choice: 'beforeTurn' });
 			this.queue.addChoice({ choice: 'residual' });
 			this.midTurn = true;
-			start1_pokemon = player1.active[0].name;
-			start1_health = player1.active[0].hp;
-			start2_pokemon = player2.active[0].name;
-			start2_health = player2.active[0].hp;
+			// start1_pokemon = player1.active[0].name;
+			// start1_health = player1.active[0].hp;
+			// start2_pokemon = player2.active[0].name;
+			// start2_health = player2.active[0].hp;
 		}
 
 		let action;
 		while ((action = this.queue.shift())) {
+			start1_pokemon = player1.active[0].name;
+			start1_health = player1.active[0].hp;
+			start2_pokemon = player2.active[0].name;
+			start2_health = player2.active[0].hp;
 			this.runAction(action);
 			if (this.requestState || this.ended) return;
 		}
@@ -2992,10 +2996,10 @@ export class Battle {
 			if (additional == 3) {
 				p1_formataction = formatAction(this.inputLog[antepenultimate], player1)
 				p2_formataction = formatAction(this.inputLog[penultimate], player2)
-				start1_pokemon = player1.active[0].name;
-				start1_health = player1.active[0].hp;
-				start2_pokemon = player2.active[0].name;
-				start2_health = player2.active[0].hp;
+				// start1_pokemon = player1.active[0].name;
+				// start1_health = player1.active[0].hp;
+				// start2_pokemon = player2.active[0].name;
+				// start2_health = player2.active[0].hp;
 			}
 			// start pokemon
 			// start health
