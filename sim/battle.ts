@@ -2923,10 +2923,10 @@ export class Battle {
 
 		const player1 = this.sides[0];
 		const player2 = this.sides[1];
-		let start1_pokemon = '';
-		let start1_health = 100;
-		let start2_pokemon = '';
-		let start2_health = 100;
+		let start1_pokemon = player1.active[0].name;
+		let start1_health = player1.active[0].hp;
+		let start2_pokemon = player2.active[0].name;
+		let start2_health = player2.active[0].hp;
 
 
 		if (this.requestState) this.requestState = '';
@@ -2980,13 +2980,21 @@ export class Battle {
 			
 			const ultimate = this.inputLog.length - 1
 			const penultimate = this.inputLog.length - 2
+			const antepenultimate = this.inputLog.length - 3
 
 			console.log(this.inputLog)
 			console.log(this.inputLog.length)
-			console.log(this.inputLog.length - this.inputLength)
+			const additional = this.inputLog.length - this.inputLength;
 
-			const p1_formataction = formatAction(this.inputLog[this.inputLog.length - 2], player1)
-			const p2_formataction = formatAction(this.inputLog[this.inputLog.length - 1], player2)
+			let p1_formataction = formatAction(this.inputLog[penultimate], player1)
+			let p2_formataction = formatAction(this.inputLog[ultimate], player2)
+
+			if (additional == 3) {
+				p1_formataction = formatAction(this.inputLog[antepenultimate], player1)
+				p2_formataction = formatAction(this.inputLog[penultimate], player2)
+			}
+			// start pokemon
+			// start health
 
 			const singleTurn: TurnData = {
 				battle_id: battle_id,
