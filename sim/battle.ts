@@ -2927,6 +2927,7 @@ export class Battle {
 		let start1_health = 100;
 		let start2_pokemon = '';
 		let start2_health = 100;
+		let inputlength = 0
 
 
 		if (this.requestState) this.requestState = '';
@@ -2981,11 +2982,9 @@ export class Battle {
 			const ultimate = this.inputLog.length - 1
 			const penultimate = this.inputLog.length - 2
 
-			if (this.inputLog[ultimate].split(" ")[0] == this.inputLog[penultimate].split(" ")[0]) {
-				console.log('hello')
-			}
 			console.log(this.inputLog)
 			console.log(this.inputLog.length)
+			console.log(this.inputLog.length - inputlength)
 
 			const p1_formataction = formatAction(this.inputLog[this.inputLog.length - 2], player1)
 			const p2_formataction = formatAction(this.inputLog[this.inputLog.length - 1], player2)
