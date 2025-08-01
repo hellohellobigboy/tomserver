@@ -2948,7 +2948,6 @@ export class Battle {
 		}
 
 		this.endTurn();
-		// console.log(this)
 
 		function formatAction(raw: string, player: Side) {
 			const pieces = raw.split(" "); // ['>p1', 'switch', 2]
@@ -2961,7 +2960,6 @@ export class Battle {
 			}
 			return raw
 		}
-		console.log(this)
 
 		if (this.turn > 1) {
 			console.log(this.turn)
@@ -2979,6 +2977,15 @@ export class Battle {
 
 			const p1_tracking = p1_client.hoverLogs;
 			const p2_tracking = p2_client.hoverLogs;
+			
+			const ultimate = this.inputLog.length - 1
+			const penultimate = this.inputLog.length - 2
+
+			if (this.inputLog[ultimate].split(" ")[0] == this.inputLog[penultimate].split(" ")[0]) {
+				console.log('hello')
+			}
+			console.log(this.inputLog)
+			console.log(this.inputLog.length)
 
 			const p1_formataction = formatAction(this.inputLog[this.inputLog.length - 2], player1)
 			const p2_formataction = formatAction(this.inputLog[this.inputLog.length - 1], player2)

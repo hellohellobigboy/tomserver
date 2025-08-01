@@ -617,8 +617,6 @@ export class RoomBattle extends RoomGame<RoomBattlePlayer> {
 		this.stream.write(`>fromclient ${data}`)
 	}
 	override choose(user: User, data: string) {
-		console.log('working?')
-		// console.log(this)
 		if (this.frozen) {
 			user.popup(`Your battle is currently paused, so you cannot move right now.`);
 			return;
