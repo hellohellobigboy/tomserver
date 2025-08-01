@@ -2923,10 +2923,11 @@ export class Battle {
 
 		const player1 = this.sides[0];
 		const player2 = this.sides[1];
-		let start1_pokemon = '';
-		let start1_health = 100;
-		let start2_pokemon = '';
-		let start2_health = 100;
+		let start1_pokemon = player1.active[0]?.name || '';
+		let start1_health = player1.active[0]?.hp || 0;
+		let start2_pokemon = player2.active[0]?.name || '';
+		let start2_health = player2.active[0]?.hp || 0;
+
 
 
 		if (this.requestState) this.requestState = '';
@@ -2943,10 +2944,6 @@ export class Battle {
 
 		let action;
 		while ((action = this.queue.shift())) {
-			start1_pokemon = player1.active[0].name;
-			start1_health = player1.active[0].hp;
-			start2_pokemon = player2.active[0].name;
-			start2_health = player2.active[0].hp;
 			this.runAction(action);
 			if (this.requestState || this.ended) return;
 		}
