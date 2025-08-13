@@ -2,7 +2,7 @@
 const basepower = 16;
 export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	grassattack: {
-		name: `Grass Attack (${basepower})`,
+		name: `Grass Attack`,
 		basePower: basepower,
 		accuracy: true,
 		pp: 20,
@@ -16,7 +16,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		noDamageVariance: true
 	},
 	waterattack: {
-		name: `Water Attack (${basepower})`,
+		name: `Water Attack`,
 		basePower: basepower,
 		accuracy: true,
 		pp: 20,
@@ -30,7 +30,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		noDamageVariance: true
 	},
 	fireattack: {
-		name: `Fire Attack (${basepower})`,
+		name: `Fire Attack`,
 		basePower: basepower,
 		accuracy: true,
 		pp: 20,
@@ -44,7 +44,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		noDamageVariance: true
 	},
 	normalattack: {
-		name: `Normal Attack (${basepower})`,
+		name: `Normal Attack`,
 		basePower: basepower,
 		accuracy: true,
 		pp: 20,

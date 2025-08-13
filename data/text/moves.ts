@@ -1,21 +1,22 @@
+const basepower = 16;
 export const MovesText: { [id: IDEntry]: MoveText } = {
 	grassattack: {
-		name: 'Grass Attack',
+		name: `Grass Attack (${basepower})`,
 		desc: 'A grass attack',
 		shortDesc: 'grassy'
 	},
 	fireattack: {
-		name: 'Fire Attack',
+		name: `Fire Attack (${basepower})`,
 		desc: 'A Fire attack',
 		shortDesc: 'fiery'
 	},
 	waterattack: {
-		name: 'Water Attack',
+		name: `Water Attack (${basepower})`,
 		desc: 'A water attack',
 		shortDesc: 'watery'
 	},
 	normalattack: {
-		name: 'Normal Attack',
+		name: `Normal Attack (${basepower})`,
 		desc: 'A normal attack',
 		shortDesc: 'regular'
 	},
