@@ -1,9 +1,9 @@
 // List of flags and their descriptions can be found in sim/dex-moves.ts
-
+const basepower = 16;
 export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	grassattack: {
-		name: 'Grass Attack',
-		basePower: 17,
+		name: `Grass Attack (${basepower})`,
+		basePower: basepower,
 		accuracy: true,
 		pp: 20,
 		category: 'Special',
@@ -16,8 +16,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		noDamageVariance: true
 	},
 	waterattack: {
-		name: 'Water Attack',
-		basePower: 17,
+		name: `Water Attack (${basepower})`,
+		basePower: basepower,
 		accuracy: true,
 		pp: 20,
 		category: 'Special',
@@ -30,8 +30,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		noDamageVariance: true
 	},
 	fireattack: {
-		name: 'Fire Attack',
-		basePower: 17,
+		name: `Fire Attack (${basepower})`,
+		basePower: basepower,
 		accuracy: true,
 		pp: 20,
 		category: 'Special',
@@ -44,8 +44,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		noDamageVariance: true
 	},
 	normalattack: {
-		name: 'Normal Attack',
-		basePower: 17,
+		name: `Normal Attack (${basepower})`,
+		basePower: basepower,
 		accuracy: true,
 		pp: 20,
 		category: 'Special',
